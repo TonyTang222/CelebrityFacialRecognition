@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///Users/tonytang/Desktop/BlackpinkFacialClassifier/UI/app.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Person Classifier</title>
+    <link rel="stylesheet" href="./Sports Person Classifier_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Sports Person Classifier_files/dropzone.min.css">
+    <link rel="stylesheet" href="./Sports Person Classifier_files/app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <a class="navbar-brand" href="file:///Users/tonytang/Desktop/BlackpinkFacialClassifier/UI/app.html#">BLACKPINK Member Classifier</a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+        <div class="col card-wrapper" data-player="Jennie">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./Sports Person Classifier_files/jennie.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Jennie</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>            
+            <div class="col card-wrapper" data-player="Jisoo">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="./Sports Person Classifier_files/jisoo.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Jisoo</h4>
+                            <p></p>
+                        </div>
+                    </div>
+            </div>            
+            <div class="col card-wrapper" data-player="Rosé">
+                    <div class="card border-0">
+                        <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                            <img class="w-100 h-100" src="./Sports Person Classifier_files/rose.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body text-center mt-4">
+                            <h4 class="text-uppercase card-title">Rosé</h4>
+                            <p></p>
+                        </div>
+                    </div>
+            </div>          
+
+            <div class="col card-wrapper" data-player="Lisa">
+                <div class="card border-0">
+                    <div class="position-relative rounded-circle overflow-hidden mx-auto custom-circle-image">
+                        <img class="w-100 h-100" src="./Sports Person Classifier_files/lisa.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center mt-4">
+                        <h4 class="text-uppercase card-title">Lisa</h4>
+                        <p></p>
+                    </div>
+                </div>
+            </div>      
+
+            
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-12 mx-auto">
+                        <form action="file:///file-upload" class="dropzone dz-clickable" id="dropzone">
+                            <div class="dz-message needsclick">
+                                <img src="./Sports Person Classifier_files/upload.png" width="50vw" height="50vw"><br>
+                                <span class="note needsclick">Drop files here or click to upload</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-3 mx-auto">
+                        <button id="submitBtn" type="button" class="btn btn-success">Classify</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-8 error" id="error" style="display: none;">
+                <p>Can't classify image. Classifier was not able to detect face and two eyes properly</p>    
+            </div>
+
+            <div class="col-sm-4" id="resultHolder" style="display: none;">
+            </div>
+            <div class="col-sm-4" id="divClassTable" style="display: none;">
+                <table id="classTable">
+                        <tbody><tr>
+                            <th>Player</th>
+                            <th>Probability Score</th>
+                        </tr>
+                        <tr>
+                            <td>Leonel Messi</td>
+                            <td id="score_lionel_messi"></td>
+                        </tr>
+                        <tr>
+                            <td>Maria Sharapova</td>
+                            <td id="score_maria_sharapova"></td>
+                        </tr>
+                        <tr>
+                            <td>Rodger Federer</td>
+                            <td id="score_roger_federer"></td>
+                        </tr>
+                        <tr>
+                            <td>Serena Williams</td>
+                            <td id="score_serena_williams"></td>
+                        </tr>
+                        <tr>
+                            <td>Virat Kohli</td>
+                            <td id="score_virat_kohli"></td>
+                        </tr>
+                </tbody></table>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+<script src="./Sports Person Classifier_files/jquery.min.js"></script>
+<script src="./Sports Person Classifier_files/bootstrap.min.js"></script>
+<script src="./Sports Person Classifier_files/dropzone.min.js"></script>
+<script src="./Sports Person Classifier_files/app.js"></script>
+<input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"></body><!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> --></html>
